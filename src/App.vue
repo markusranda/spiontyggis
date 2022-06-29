@@ -6,6 +6,8 @@ import { RouterView } from "vue-router";
   <header>
     <img src="./assets/spy.png" alt="" />
     <h1>Spiontyggis.no</h1>
+
+    <router-link class="router-link-game" to="game">Prøv spillet</router-link>
   </header>
 
   <RouterView />
@@ -31,5 +33,16 @@ header h1 {
 
 img {
   height: 4rem;
+}
+
+.router-link-game {
+  border: solid black;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: 2rem;
+  text-decoration: none;
+
+  margin-left: auto;
+  padding: 0 0.5rem 0 0.5rem;
 }
 </style>
